@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(54, 123, 133, 0.658); */
+    background-color:#23253b9f;
+
+}
+
+.datetime{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+width: 350px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px 20px;
+
+    /* From https://css.glass */
+background: rgba(19, 18, 20, 0.699);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(255, 241, 241, 0.534);
+backdrop-filter: blur(7px);
+-webkit-backdrop-filter: blur(10 px);
+border: 1px solid rgba(252, 247, 247, 0.774);
+}
+
+#hours,#minutes,#seconds{
+    background: -webkit-linear-gradient(90deg, #9f29ff, #08c5ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#dots1,#dots2,#dayNumber,#dayName,#month,#year{
+    background: -webkit-linear-gradient(90deg, #f89466, #fc4692);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#period{
+    background: -webkit-linear-gradient(90deg, #0a90fd, #fc4692);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+.calendar{
+font-size: 20px;
+font-weight: 600 ;
+text-align: center;
+letter-spacing: 3px;
+letter-spacing: 3px;
+}
+
+.time{
+    font-size: 60px ;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.time span:not(:last-child){
+    position: relative;
+    margin: 0 6px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time span:last-child{
+    font-size: 30px ;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    
+}
